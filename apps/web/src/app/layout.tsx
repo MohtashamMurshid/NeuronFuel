@@ -4,6 +4,7 @@ import "../index.css";
 import Providers from "@/components/providers";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
+import { dark } from "@clerk/themes";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
 
 const geistSans = Geist({
@@ -27,7 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    <ClerkProvider
+      appearance={{
+        baseTheme: dark,
+        variables: { colorText: "hsl(var(--foreground))" },
+      }}
+    >
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}

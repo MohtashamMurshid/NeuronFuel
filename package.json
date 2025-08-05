@@ -15,7 +15,8 @@
     "dev:setup": "turbo -F @NeuronFuel/backend dev:setup"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.28.1"
+    "@clerk/nextjs": "^6.28.1",
+    "@clerk/themes": "^2.4.4"
   },
   "devDependencies": {
     "turbo": "^2.5.4"

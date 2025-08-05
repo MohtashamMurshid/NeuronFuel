@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { ModeToggle } from "./mode-toggle";
 import { SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
-import { Button } from "./ui/button";
 import { Authenticated, Unauthenticated } from "convex/react";
 import { Mountain } from "lucide-react";
 
