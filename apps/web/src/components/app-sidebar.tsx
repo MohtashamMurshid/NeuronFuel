@@ -4,8 +4,6 @@ import {
   IconMicrophone,
   IconUpload,
   IconBrandYoutube,
-  IconLogout,
-  IconUser,
 } from "@tabler/icons-react";
 import { UserButton } from "@clerk/nextjs";
 
@@ -20,8 +18,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { Button } from "./ui/button";
-import Link from "next/link";
+
 import { Mountain } from "lucide-react";
 
 const data = {
@@ -60,7 +57,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               asChild
               className="data-[slot=sidebar-menu-button]:!p-1.5"
             >
-              <a href="#">
+              <a href="/">
                 <Mountain className="!size-5" />
                 <span className="text-lg font-semibold">Neuron Fuel</span>
               </a>

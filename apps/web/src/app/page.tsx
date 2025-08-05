@@ -14,7 +14,7 @@ import Header from "@/components/header";
 
 export default function Component() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
+    <div className="flex flex-col min-h-[100dvh] bg-background mx-auto max-w-7xl">
       <Header />
 
       <main className="flex-1">
